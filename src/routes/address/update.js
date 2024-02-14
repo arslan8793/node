@@ -55,7 +55,7 @@ router.put('/address/update', async(req,res)=>{
     query += ` WHERE ADDRESS_ID = ${id}`
 
     let result = await DB(query);
-
+ 
     text = 'Address detail updated successfully';
     sendMail(text)
     res.send({"address detail is updated sucesfully ":result.rowsAffected});
