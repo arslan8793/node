@@ -23,6 +23,7 @@ router.delete('/address/delete',async(req,res)=>{
         
        res.send("address detail id deleted sucesfully") ;
     }
+    
     else
     {
         res.send("address detail id is not deleted");
